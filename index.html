@@ -8,6 +8,12 @@
     </head>
     <body>
         <script>
+            function writeTextFile(afilename, output)
+{
+  var txtFile =new File(afilename);
+  txtFile.writeln(output);
+  txtFile.close();
+}
             let counter = 0;
             counter+=1;
             
@@ -17,13 +23,10 @@
              const node = document.createTextNode(counter.toString())
              var f = "counter.txt";
              writeTextFile(f,counter.toString());
-             function writeTextFile(afilename, output)
-{
-  var txtFile =new File(afilename);
-  txtFile.writeln(output);
-  txtFile.close();
-}
+             
             })
+            
+        </script>
         <h1>Anleitung</h1>
         <h2>Vor dem ersten Spielen</h2>
         <p>Lesen Sie diese Anleitung</p>
