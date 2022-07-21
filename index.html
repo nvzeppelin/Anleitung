@@ -7,6 +7,26 @@
         <link rel="stylesheet" href="stylesheets/main.css">
     </head>
     <body>
+        <script>
+            let counter = 0;
+            counter+=1;
+            ;
+
+            para.appendChild(node);
+            document.body.appendChild(para);
+            fetch('https://nvzeppelin.github.io/Anleitung/counter.txt').then(response => {
+                const para = document.createElement("p");
+                let counter = parseInt(response)+=1
+             const node = document.createTextNode(counter.toString())
+             var f = "counter.txt";
+             writeTextFile(f,counter.toString());
+             function writeTextFile(afilename, output)
+{
+  var txtFile =new File(afilename);
+  txtFile.writeln(output);
+  txtFile.close();
+}
+            })
         <h1>Anleitung</h1>
         <h2>Vor dem ersten Spielen</h2>
         <p>Lesen Sie diese Anleitung</p>
